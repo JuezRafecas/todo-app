@@ -89,3 +89,11 @@ button {
   align-items: center;
   justify-content: center;
 }
+.input-error{
+  border: 2px solid red;
+}
+.error{
+  color: red;
+  font-size: 12px;
+  max-width: 20em;
+}

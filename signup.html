@@ -12,7 +12,7 @@
 
   <!-- ---------------------- logica aplicada en register -------------------- -->
   <!-- <script src="/scripts/utils.js"></script> -->
-  <script src="/scripts/signup.js"></script>
+  <script src="/scripts/signup.js" defer></script>
 
 </head>
 
@@ -22,30 +22,30 @@
     <img src="./assets/persona-signup.png" alt="">
   </div>
   <div class="right">
-    <form>
+    <form method="post" action="index.html">
       <div class="form-header">
         <p>To-Do App</p>
       </div>
 
       <label>
         Nombre:
-        <input id="inputNombre" type="text">
+        <input type="text" name="nombre">
       </label>
       <label>
         Apellido:
-        <input id="inputApellido" type="text">
+        <input type="text" name="apellido">
       </label>
       <label>
         Email:
-        <input id="inputEmail" type="text">
+        <input type="email" name="email">
       </label>
       <label>
         Contraseña:
-        <input id="inputPassword" type="password">
+        <input type="password" name="password">
       </label>
       <label>
         Repetir contraseña:
-        <input id="inputPasswordRepetida" type="password">
+        <input type="password" class="validate-password" >
       </label>
 
       <button>Crear Cuenta</button>
